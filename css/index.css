@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, hsl(274, 100%, 25%) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLES */
+
+.header_navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.header_navbar-logo,
+.header_navbar-items {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.header_navbar-logo {
+    z-index: 3;
+}
+
+.header_navbar-items {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+li {
+    width: calc(100vw - 56px);
+}
+
+.header_navbar-itemss {
+    position: relative;
+    top: 136px;
+    left: 56px;
+}
+
+.header_navbar-menu {
+    height: 32px;
+    width: 36.13px;
+    filter: brightness(100%);
+    z-index: 2;
+}
+
+.active {
+    border-bottom: 3.5px solid #480080;
+}
+
+.navbar-active {
+    left: 0;
+}
+
+.img2 {
+    content: url(/assets/paw-claws.png);
+}
+
+/* MAIN STYLES */
+
+.main {
+    padding: 0 36px;
+    padding-top: 30px;
+}
+
+.main_section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.main_section-title {
+    font-size: 24px;
+    font-weight: 300;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    font-family: 'Times New Roman', Times, serif;
+    color: #e6e4e4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.typewriter-text {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #e6e4e4;
+}
+
+.main_section-autor {
+    position: absolute;
+    font-size: 18px;
+    top: 65vh;
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+    animation-delay: 70s;
+    color: #e6e4e4;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#toggleButton, #toggleButton2 {
+    color: #d1d1d1;
+    border: 2px solid #d1d1d1;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 36px;
+    top: 80vh;
+    width: 6em;
+    height: 2em;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    opacity: 0.95;
+}
+
+/* FOOTER */
+
+/*----------------- DOG PAINTING ----------------------*/
+
+.body2 {
+    background: rgb(84,0,148);
+    background: radial-gradient(circle, rgba(84,0,148,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.main2 {
+    height: calc(100% - 80px);
+    padding: 33px 35px 0 33px;
+}
+
+.main2_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.main2_section-title {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main2_section-containers {
+    width: 235px;
+    height: 65px;
+    border: 2px solid #fff;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main2_section-containers a {
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 50%);
+}
+
+.cuadro1 {
+    background-image: url(/assets/cabeza-de-perro-manet-817x1024.jpg);
+    background-size: cover;
+}
+
+.cuadro2 {
+    background-image: url(/assets/arte-wharhol-perro.jpg);
+    background-size: cover;
+}
+
+.cuadro3 {
+    background-image: url(/assets/el-perro-de-las-meninas-768x403.jpg);
+    background-size: cover;
+}
+
+.cuadro4 {
+    background-image: url(/assets/cassius-marcellus-768x595.jpg);
+    background-size: cover;
+}
+
+.cuadro5 {
+    background-image: url(/assets/tamayo-perro-luna.png);
+    background-size: cover;
+}
+
+/* ------------------- CABEZABOB -------------------------*/
+
+.main3 {
+    padding: 12px 35px 0 35px;
+}
+
+.main3_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main3_section-title,
+.main3_section-paraph {
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.main3_section-img {
+    width: 205px;
+    height: 232px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.main3_section-text {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.btn-back {
+    background-color: transparent;
+    width: 50px;
+    height: 20px;
+    border: 2px solid #c0c0c0;
+    position: absolute;
+    top: 95%;
+    opacity: 0.5;
+}
+
+.btn-back:active {
+    transform: scale(0.90);
+}
+
+/*------------------------------ RETRATOMAURICE ----------------------------- */
+
+
+.main3_section-img2 {
+    width: 270px;
+    height: 183px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/*------------------------------ MENINAS ----------------------------- */
+ 
+
+.main3_section-img3 {
+    width: 291px;
+    height: 153px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/*------------------------------ PERROSPOKER ----------------------------- */
+
+.main3_section-img4 {
+    width: 270px;
+    height: 183px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/*------------------------------ PERROLUNA ----------------------------- */
+
+.main3_section-img5 {
+    width: 270px;
+    height: 183px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/*------------------------------- TRAPPEDSPACE ----------------------------------------- */
+
+.body4 {
+    background-color: #000;
+    background-image: none;
+}
+  
+.cont{
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 80px)
+}
+
+  
+#astronaut2 > img {
+    display: block;
+    width: 5em;
+    left: 10%;
+    animation: anim 20s linear infinite;
+    position: absolute;
+    top: 20%;
+}
+  
+#astronaut > img {
+    display: block;
+    width: 10em;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    animation: anim2 20s linear infinite;
+    animation-delay: 1s;
+}
+  
+@keyframes anim {
+    0% {
+      transform: translateY(0px);
+    }
+    10%{
+      transform: translateY(30px) rotate(10deg);
+    }
+    20%{
+      transform: translateY(60px) rotate(20deg);
+    }
+     30%{
+      transform: translateY(90px) rotate(30deg);
+    }
+     40%{
+      transform: translateY(120px) rotate(20deg);
+    }
+    50% {
+      transform: translateY(150px) rotate(30deg);
+    }
+    60%{
+      transform: translateY(120px) rotate(40deg);
+    }
+    70%{
+      transform: translateY(90px) rotate(10deg);
+    }
+    80%{
+      transform: translateY(60px) rotate(20deg);
+    }
+    90%{
+      transform: translateY(30px) rotate(10deg);
+    }
+     100% {
+      transform: translateY(0px);
+    }
+}
+  
+@keyframes anim2 {
+    0% {
+      transform: translateY(0px);
+    }
+    10%{
+      transform: translateY(-30px) rotate(-10deg);
+    }
+    20%{
+      transform: translateY(-60px) rotate(-20deg);
+    }
+     30%{
+      transform: translateY(-90px) rotate(-10deg);
+    }
+     40%{
+      transform: translateY(-120px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-150px) rotate(-10deg);
+    }
+    60%{
+      transform: translateY(-120px) rotate(0deg);
+    }
+    70%{
+      transform: translateY(-90px) rotate(20deg);
+    }
+    80%{
+      transform: translateY(-60px) rotate(10deg);
+    }
+    90%{
+      transform: translateY(-30px) rotate(0deg);
+    }
+     100% {
+      transform: translateY(0px);
+    }
+}
